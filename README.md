@@ -14,8 +14,8 @@
 3. `git clone https://github.com/AbhiModszYT/Libpatcher.git`
 4. `cd Libpatcher`
 5. `ls`
-6. `chmod +x Libpatcher.sh`
-7. `./Libpatcher.sh`
+6. `chmod +x dump.sh`
+7. `./dump.sh`
 
 Enjoy...🙂
 
