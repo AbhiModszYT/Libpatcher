@@ -1,11 +1,11 @@
 clear
 
-echo -e "\033[36m\n\n ⚪  WELCOME TO LIB PATCHER SCRIPT...!!  \033[0m"
+echo -e "\033[36m\n\n ⚪  WELCOME TO LIB DUMP SCRIPT...!!  \033[0m"
 echo -e "\033[32m ⚪  VERSION : V1.0  \033[0m"
 echo -e "\033[33m ⚪  AUTHOR : AMBOT [AbhiModszYT]\033[0m"
 echo -e "\033[34m ⚪  REQUIREMENT : RADARE2 & GHIDRA \033[0m"
 
-options=("👑Install Radare2 And R2Ghidra [Recommend] ? " "👑Find Offsets In Lib..! " "👑Start Lib Patching..!" "👑Dump Lib..!" "⭕Exit..!")
+options=("👑Install Radare2 And R2Ghidra [Recommend] ? " "👑Find Offsets In Lib..! " "👑Start Lib dumping..!" "👑Dump Lib..!" "⭕Exit..!")
 
 function display_menu() {
     echo -e "\033[33m\n  SELECT AN OPTION -> \033[0m"
@@ -96,7 +96,7 @@ while true; do
             
             clear
             echo -e "\033[32m ⚠️ Instructions  ⚠️\n\033[0m"
-            echo -e "\033[32m You Can Patch Lib By Using This Commands : \033[0m"
+            echo -e "\033[32m You Can Dump Lib By Using This Commands : \033[0m"
             echo -e "\033[32m [1]  a  --[a  = analyze] \033[0m"
             echo -e "\033[32m [2]  s 0xoffset  --Eg. s 0x1234  \033[0m"
             echo -e "\033[32m [3]  aF  --aF for analyzing function  \033[0m"
@@ -105,9 +105,9 @@ while true; do
             echo -e "\033[32m [6]  PatchCode  -- [E.g (wa nop) For False Or Value 0 ]  \033[0m"
             echo -e "\033[31m\n [📍] q  --[Type ( q ) To quite From Radare2]\033[0m"
             
-            echo -e "\033[32m\n [ x64 ] Patch Codes : \n [bool true] = wx 20008052C0035FD6 \n [bool false] = wx 00008052C0035FD6 \n [int zero] = wx 00008052C0035FD6 \n [int16 max] = wx E0FF8F52C0035FD6 \n [int32 max] = wx E0FF9F52E0FFAF72C0035FD6 \n [long zero] = wx 00008052C0035FD6 \n [long 64] = wx E0FF9FD2E0FFBFF2E00FC0F2C0035FD6 \n [float zero] = wx E003271EC0035FD6 \n [double zero] = wx E003679EC0035FD6 \n [void nop] = wx C0035FD6 \033[0m"
+            echo -e "\033[32m\n [ x64 ] Dump Codes : \n [bool true] = wx 20008052C0035FD6 \n [bool false] = wx 00008052C0035FD6 \n [int zero] = wx 00008052C0035FD6 \n [int16 max] = wx E0FF8F52C0035FD6 \n [int32 max] = wx E0FF9F52E0FFAF72C0035FD6 \n [long zero] = wx 00008052C0035FD6 \n [long 64] = wx E0FF9FD2E0FFBFF2E00FC0F2C0035FD6 \n [float zero] = wx E003271EC0035FD6 \n [double zero] = wx E003679EC0035FD6 \n [void nop] = wx C0035FD6 \033[0m"
             
-            echo -e "\033[32m\n [ x32 ] Patch Codes : \n [bool true] = wx 0100A0E31EFF2FE1 \n [bool false] = wx 0000A0E31EFF2FE1 \n [int zero] = wx 0000A0E31EFF2FE1 \n [int16 max] = wx FF0F07E31EFF2FE1 \n [int32 max] = wx FF0F0FE3FF0F47E31EFF2FE1 \n [long zero] = wx 0000A0E31EFF2FE1 \n [long 64] = wx 0201E0E31EFF2FE1 \n [float zero] = wx 0000A0E31EFF2FE1 \n [double zero] = wx 0000A0E31EFF2FE1 \n [void nop] = wx 1EFF2FE1 \033[0m"
+            echo -e "\033[32m\n [ x32 ] Dump Codes : \n [bool true] = wx 0100A0E31EFF2FE1 \n [bool false] = wx 0000A0E31EFF2FE1 \n [int zero] = wx 0000A0E31EFF2FE1 \n [int16 max] = wx FF0F07E31EFF2FE1 \n [int32 max] = wx FF0F0FE3FF0F47E31EFF2FE1 \n [long zero] = wx 0000A0E31EFF2FE1 \n [long 64] = wx 0201E0E31EFF2FE1 \n [float zero] = wx 0000A0E31EFF2FE1 \n [double zero] = wx 0000A0E31EFF2FE1 \n [void nop] = wx 1EFF2FE1 \033[0m"
             
             echo  -e "\033[35m\n\n Do You Want To Continue ? (yes/no) \033[0m"
             read -p " >>> " choice
